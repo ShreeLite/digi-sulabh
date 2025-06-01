@@ -23,9 +23,9 @@ const complaintSchema=new mongoose.Schema({
 
     },
     resolvedAt:Date,
-    resolutionNote:string,
-    submittedBy:string
+    resolutionNote:String,
+    submittedBy:String
 
 })
 
-module.exports('Complaint',complaintSchema);
+module.exports=mongoose.model('Complaint',complaintSchema);

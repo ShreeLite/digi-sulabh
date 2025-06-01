@@ -1,4 +1,4 @@
-const mongoose=require('mongooose')
+const mongoose=require('mongoose')
 const cleanerSchema=new mongoose.Schema({
     toilet:{
         type:mongoose.Schema.Types.ObjectId,
