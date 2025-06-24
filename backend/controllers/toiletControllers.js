@@ -18,6 +18,42 @@ const GetToilets=async (req,res)=>{
 
 }
 
+const NearbyToilets=async(req,res)=>{
+//     Toilet.collection.getIndexes({ full: true }).then(indexes => {
+//   console.log('Current indexes:', indexes);
+// }).catch(err => {
+//   console.error('Error fetching indexes:', err);
+// });
+
+     const { lat, lng } = req.query;
+
+  if (!lat || !lng) {
+    return res.status(400).json({ error: 'Latitude and longitude are required.' });
+  }
+
+  try {
+    const toilets = await Toilet.find({
+      coordinates: {
+        $nearSphere: {
+          $geometry: {
+            type: 'Point',
+            coordinates: [parseFloat(lng), parseFloat(lat)]
+          },
+          $maxDistance: 5000  //(5 km radius — can be adjusted as needed)
+        }
+      }
+    });
+
+    res.json(toilets);
+  } catch (err) {
+    console.error('Error finding nearby toilets:', err);
+    res.status(500).json({ error: 'Server error while fetching nearby toilets.' });
+  }
+
+}
+
+
+
 //A function to get a single toilet from the database by id(from the Model Toilet)
 //GET/api/toilets/:id
 const GetSingleToilet=async (req,res)=>{
@@ -98,5 +134,5 @@ const DeleteToilet=async (req,res)=>{
 }
 
 module.exports={
-    GetToilets,GetSingleToilet,AddToilet,UpdateToilet,DeleteToilet
+    GetToilets,GetSingleToilet,AddToilet,UpdateToilet,DeleteToilet,NearbyToilets
 }

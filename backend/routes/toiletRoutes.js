@@ -1,22 +1,26 @@
 const express=require('express')
 const router=express.Router();
 const {
-    GetToilets,GetSingleToilet,AddToilet,UpdateToilet,DeleteToilet
+    GetToilets,GetSingleToilet,AddToilet,UpdateToilet,DeleteToilet,NearbyToilets
 }  =require('../controllers/toiletControllers')
 
-//GET/api/toilets
+//GET/api/toilet
 router.get('/',GetToilets);
 
-//GET/api/toilets/:id
-router.get('/:id',GetSingleToilet);
+//To get toilets based on user location
+//GET/api/toilet/nearby
+router.get('/nearby',NearbyToilets);
 
-//POST/api/toilets
+//GET/api/toilet/:id
+ router.get('/:id',GetSingleToilet);
+
+//POST/api/toilet
 router.post('/',AddToilet)
 
-//PUT/api/toilets/:id
+//PUT/api/toilet/:id
 router.put('/:id',UpdateToilet)
 
-//DELETE/api/toilets/:id
+//DELETE/api/toilet/:id
 router.delete('/:id',DeleteToilet)
 
 module.exports=router;
