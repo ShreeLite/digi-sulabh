@@ -342,11 +342,7 @@ Built by ShreeLite a first-year engineering student at **IIIT Hyderabad**, combi
 
 ---
 
-## 🌍 Social Impact
 
-> **DigiSulabh** isn't just code — it's a mission. By merging smart tech with civic responsibility, we aim to fix a long-ignored problem of public hygiene and give dignity to everyone. From citizens to cleaners to administrators — everyone benefits from a cleaner, smarter India.
-
----
 
 ---
 
@@ -383,12 +379,17 @@ For questions, suggestions, or collaboration opportunities:
 - **Twitter**: [@yourusername](https://twitter.com/yourusername)
 
 ---
+## 🌍 Social Impact
+
+> **DigiSulabh** isn't just code — it's a mission. By merging smart tech with civic responsibility, we aim to fix a long-ignored problem of public hygiene and give dignity to everyone. From citizens to cleaners to administrators — everyone benefits from a cleaner, smarter India.
+
+---
 
 <div align="center">
 
-**Made with ❤️ for a cleaner, smarter India**
+**Made with ❤️ by ShreeLite for a cleaner, smarter India**
 
-[⭐ Star this repo](https://github.com/yourusername/digi-sulabh) | [🍴 Fork it](https://github.com/yourusername/digi-sulabh/fork) | [📝 Contribute](CONTRIBUTING.md)
+[⭐ Star this repo](https://github.com/ShreeLite/digi-sulabh) | [🍴 Fork it](https://github.com/ShreeLite/digi-sulabh/fork) | [📝 Contribute](CONTRIBUTING.md)
 
 </div>
 
