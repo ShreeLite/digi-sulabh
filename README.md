@@ -175,7 +175,7 @@ DigiSulabh follows a **microservices-inspired architecture** with clear separati
 
 ---
 
-## 🌟 Impact & Vision
+## 🌟 Impact
 
 ### Current Impact:
 - **Digitizes** manual processes affecting millions of daily users
@@ -183,12 +183,7 @@ DigiSulabh follows a **microservices-inspired architecture** with clear separati
 - **Reduces response time** for sanitation issues through automated workflows
 - **Provides transparency** via real-time status updates and acknowledgments
 
-### Future Vision:
-- **IoT Integration**: Sensor-based automatic monitoring (ammonia levels, occupancy)
-- **Predictive Analytics**: ML models to predict maintenance needs
-- **Government Dashboard**: Policy-level insights for urban planning
-- **Offline Support**: Rural deployment with sync capabilities
-- **Multi-language Support**: Regional language interfaces
+
 
 ---
 
@@ -202,18 +197,7 @@ DigiSulabh follows a **microservices-inspired architecture** with clear separati
 - **Performance**: CDN integration and database indexing for <2s load times
 
 ---
-## 🏆 Why DigiSulabh Matters
 
-Public sanitation is a fundamental right and a key indicator of societal development. DigiSulabh doesn't just create an app—it builds digital infrastructure that:
-
-- **Empowers citizens** with information and voice
-- **Supports workers** with better tools and recognition  
-- **Enables administrators** with data-driven decision making
-- **Scales solutions** that can impact millions of lives
-
-This project demonstrates how modern technology can solve real-world problems while creating economic opportunities and improving quality of life.
-
----
 
 ## 🚀 Quickstart (For Developers)
 
