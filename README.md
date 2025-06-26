@@ -160,29 +160,6 @@ DigiSulabh follows a **microservices-inspired architecture** with clear separati
 
 ---
 
-## 🌟 Impact
-
-### Current Impact:
-- **Digitizes** manual processes affecting millions of daily users
-- **Increases accountability** through photo verification and feedback loops  
-- **Reduces response time** for sanitation issues through automated workflows
-- **Provides transparency** via real-time status updates and acknowledgments
-
-
-
----
-
-## 🔒 Technical Highlights
-
-- **Scalable Architecture**: Cloud-native design supporting thousands of concurrent users
-- **Real-time Processing**: WebSocket connections for live updates
-- **Geospatial Optimization**: Efficient nearest-neighbor queries for toilet discovery
-- **AI Integration**: Custom-trained model for sanitation image analysis
-- **Security**: OAuth authentication, API rate limiting, and data encryption
-- **Performance**: CDN integration and database indexing for <2s load times
-
----
-
 
 ## 🚀 Quickstart (For Developers)
 
