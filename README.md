@@ -33,7 +33,9 @@ flowchart TD
     G[Cleaner: OAuth Dashboard] --> C
     G --> H[Photo Upload\nMulter + Cloudinary]
     H --> I[AI Model\nCleanliness Analysis]
+    ```
 
+---
 
 ##🚀 Quickstart (For Devs)
 # 1. Clone the repo
