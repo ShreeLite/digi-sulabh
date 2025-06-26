@@ -1,5 +1,7 @@
 const express=require('express')
 const feedback=require('../models/feedback')
+const mongoose = require('mongoose');
+
 
 const GetAllFeedbacks=async (req,res)=>{
     try{
@@ -83,6 +85,51 @@ const DeleteFeedback=async (req,res)=>{
     }
 }
 
+
+
+const getAverageFeedback = async (req, res) => {
+  try {
+    const toiletId = req.params.id; // Match your route param name (`:id`)
+    
+    const result = await feedback.aggregate([
+      { $match: { toilet: new mongoose.Types.ObjectId(toiletId) } },
+      {
+        $group: {
+          _id: "$toilet",
+          avgRating: { $avg: "$rating" },
+          avgCleanliness: { $avg: "$cleanliness" },
+          avgSoap: { $avg: "$soap" },
+          avgWater: { $avg: "$water" },
+          avgLock: { $avg: "$lock" },
+          avgLight: { $avg: "$light" },
+          avgFlush: { $avg: "$flush" },
+          totalFeedbacks: { $sum: 1 }
+        }
+      }
+    ]);
+
+    if (result.length === 0) {
+      return res.status(200).json({
+        avgRating: 0,
+        avgCleanliness: 0,
+        avgSoap: 0,
+        avgWater: 0,
+        avgLock: 0,
+        avgLight: 0,
+        avgFlush: 0,
+        totalFeedbacks: 0
+      });
+    }
+
+    return res.status(200).json(result[0]);
+  } catch (err) {
+    console.error("Error fetching average feedback:", err);
+    return res.status(500).json({ error: "Internal Server Error" });
+  }
+};
+
+
+
 module.exports={
-    GetAllFeedbacks,GetSingleFeedback,AddFeedback,UpdateFeedback,DeleteFeedback
+    GetAllFeedbacks,GetSingleFeedback,AddFeedback,UpdateFeedback,DeleteFeedback,getAverageFeedback
 }

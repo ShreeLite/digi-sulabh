@@ -25,32 +25,55 @@ const NearbyToilets=async(req,res)=>{
 //   console.error('Error fetching indexes:', err);
 // });
 
-     const { lat, lng } = req.query;
+    const { lat, lng, isFree, cleanliness } = req.query;
 
-  if (!lat || !lng) {
-    return res.status(400).json({ error: 'Latitude and longitude are required.' });
+  if (!lat || !lng) return res.status(400).json({ error: 'Latitude and longitude are required' });
+
+  const query = {
+    coordinates: {
+      $near: {
+        $geometry: {
+          type: 'Point',
+          coordinates: [parseFloat(lng), parseFloat(lat)]
+        },
+        // $maxDistance: 5000 // 3km radius
+      }
+    }
+  };
+
+  // Filter: Free toilets
+  if (isFree === 'true') {
+    query.isPaid = false;
+  }
+
+  // Filter: Cleaned toilets
+  if (cleanliness === 'clean') {
+    query.isCleaned = true;
   }
 
   try {
-    const toilets = await Toilet.find({
-      coordinates: {
-        $nearSphere: {
-          $geometry: {
-            type: 'Point',
-            coordinates: [parseFloat(lng), parseFloat(lat)]
-          },
-          $maxDistance: 5000  //(5 km radius — can be adjusted as needed)
-        }
-      }
+    const toilets = await Toilet.find(query).limit(20);
+
+    const enriched = toilets.map((toilet) => {
+      
+      return {
+        _id: toilet._id,
+        name: toilet.name,
+        address: toilet.address,
+        isFree: !toilet.isPaid,
+        cleanliness: toilet.isCleaned ? 'clean' : 'dirty',
+        lastCleaned: toilet.lastCleanedAt ? toilet.lastCleanedAt.toLocaleString() : 'N/A',
+        rating: (Math.random() * 2 + 3).toFixed(1), // placeholder rating
+        distance: '≈1 km' // placeholder
+      };
     });
 
-    res.json(toilets);
-  } catch (err) {
-    console.error('Error finding nearby toilets:', err);
-    res.status(500).json({ error: 'Server error while fetching nearby toilets.' });
+    res.json(enriched);
+  } catch (error) {
+    console.error('Error fetching nearby toilets:', error);
+    res.status(500).json({ error: 'Internal Server Error' });
   }
-
-}
+};
 
 
 

@@ -5,7 +5,7 @@ import { Map, QrCode, Star, MessageSquare, Camera } from 'lucide-react';
 
 const navItems = [
   { to: '/find', label: 'Find', icon: <Map size={16} /> },
-  { to: '/scanner', label: 'Scanner', icon: <QrCode size={16} /> },
+  { to: '/scan', label: 'Scanner', icon: <QrCode size={16} /> },
   { to: '/feedback', label: 'Feedback', icon: <Star size={16} /> },
   { to: '/complaint', label: 'Complaint', icon: <MessageSquare size={16} /> },
   { to: '/cleaner', label: 'Cleaner', icon: <Camera size={16} /> },

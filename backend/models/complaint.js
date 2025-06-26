@@ -11,18 +11,18 @@ const complaintSchema = new mongoose.Schema({
   },
   issueType: {
     type: String,
-    enum: ['cleanliness', 'maintenance', 'other'],
+    enum: ['Cleanliness', 'Maintenance', 'Other'],
     required: true
   },
   priorityLevel: {
     type: String,
-    enum: ['low', 'medium', 'high'],
+    enum: ['Low', 'Medium', 'High'],
     required: true
   },
   statusofComplaint: {
     type: String,
-    enum: ['open', 'in progress', 'resolved'],
-    default: 'open'
+    enum: ['Open', 'In progress', 'Resolved'],
+    default: 'Open'
   },
   submittedAt: {
     type: Date,

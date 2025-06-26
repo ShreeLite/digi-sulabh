@@ -129,9 +129,9 @@ const ComplaintForm = () => {
               required
             >
               <option value="">Select the type of issue</option>
-              <option value="cleanliness">Cleanliness</option>
-              <option value="maintenance">Maintenance</option>
-              <option value="other">Other</option>
+              <option value="Cleanliness">Cleanliness</option>
+              <option value="Maintenance">Maintenance</option>
+              <option value="Other">Other</option>
             </select>
           </div>
 
@@ -145,9 +145,9 @@ const ComplaintForm = () => {
               required
             >
               <option value="">Select priority</option>
-              <option value="low">Low</option>
-              <option value="medium">Medium</option>
-              <option value="high">High</option>
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
             </select>
           </div>
 
