@@ -33,3 +33,21 @@ flowchart TD
     G[Cleaner: OAuth Dashboard] --> C
     G --> H[Photo Upload\nMulter + Cloudinary]
     H --> I[AI Model\nCleanliness Analysis]
+
+
+##🚀 Quickstart (For Devs)
+# 1. Clone the repo
+git clone https://github.com/yourusername/digi-sulabh.git && cd digi-sulabh
+
+# 2. Install dependencies inside frontend and backend
+cd frontend
+npm install
+cd ..
+cd backend
+npm install
+
+# 3. Setup .env (refer docs/env.example)
+
+# 4. Run frontend & backend concurrently
+npm run dev (For Frontend)
+npm run start(If using nodemon)/npm run server
