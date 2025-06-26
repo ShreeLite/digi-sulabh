@@ -8,16 +8,16 @@
 
 ## ✨ Key Features
 
-| 🧭 | **Find Nearest Toilet** – Locate Sulabh Shauchalayas using real-time GPS and OpenStreetMap |
-|----|---------------------------------------------------------------------------------------------|
-| 📷 | **QR Scan to Access** – Scan onsite QR codes to access toilets (Stripe for paid access)      |
-| 🧼 | **AI-based Cleanliness** – Cleaners upload photos analyzed by an AI model for hygiene check  |
-| 📣 | **Feedback + Complaint System** – Smart form with feedback, ratings, complaints tagging      |
-| 🔔 | **n8n + Twilio Alerts** – Complaint acknowledgment system with SMS/email alerts               |
-| 👨‍🔧 | **Cleaner Dashboard** – OAuth-protected dashboard to manage daily tasks and view complaints |
-| 🌐 | **Cloud-First Storage** – Cloudinary + Multer integration for photos, QR, and assets         |
-| 🔍 | **Search + Filter** – (Coming soon) Filter toilets by facilities, hygiene rating, and distance|
-| 🛠️ | **ETL Pipeline (WIP)** – Auto-populate DB by scraping official Sulabh Shauchalaya database   |
+| 🔍 **Find Toilets** | Locate nearest Sulabh Shauchalayas using GPS & OpenStreetMap |
+|---------------------|---------------------------------------------------------------|
+| 📷 **QR Access**     | Scan QR codes to access toilets (Stripe integration for paid ones) |
+| 🧼 **Cleanliness AI**| Daily photo uploads by cleaners auto-analyzed by AI model |
+| 📣 **Feedback + Complaints** | Ratings and issues with priority tagging + tracking |
+| 📲 **Acknowledgement Alerts** | n8n + Twilio integration for SMS/email confirmation |
+| 🧑‍🔧 **Cleaner Dashboard** | View assigned toilets, submit photos, manage complaints (OAuth-secured) |
+| ☁️ **Cloud Storage** | Cloudinary + Multer used to store photos and QR images |
+| 🔄 **ETL Pipeline (WIP)** | Automated scraping from official Sulabh websites to populate toilets |
+| 🔎 **Search & Filter** | (Coming Soon) Filter toilets based on amenities, cleanliness, and distance |
 
 ---
 
@@ -27,9 +27,9 @@
 flowchart TD
     A[User: Mobile/Browser] -->|GPS Location| B[Find Toilets UI]
     B --> C[Express.js Backend]
-    C --> D[(MongoDB Atlas)]
+    C --> D[MongoDB Atlas]
     C --> E[Stripe / QR Code Scan]
     C --> F[n8n + Twilio Alerts]
     G[Cleaner: OAuth Dashboard] --> C
-    G --> H[Photo Upload (Multer + Cloudinary)]
-    H --> I[AI Model Cleanliness Analysis]
+    G --> H[Photo Upload\nMulter + Cloudinary]
+    H --> I[AI Model\nCleanliness Analysis]
