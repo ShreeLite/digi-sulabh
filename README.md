@@ -78,7 +78,7 @@ A complete digital infrastructure that connects users, cleaners, and administrat
 ## 🔄 User Workflow
 
 ### For Citizens:
-
+![DigiSulabh Banner](docs/assets/userflow.svg)
 sequenceDiagram
     participant User
     participant App
