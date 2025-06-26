@@ -78,23 +78,8 @@ A complete digital infrastructure that connects users, cleaners, and administrat
 ## 🔄 User Workflow
 
 ### For Citizens:
-![DigiSulabh Banner](docs/assets/userflow.svg)
-sequenceDiagram
-    participant User
-    participant App
-    participant Backend
-    participant Payment
-    participant SMS
-    
-    User->>App: Open application
-    App->>Backend: Request nearby toilets
-    Backend-->>App: Return geolocated results
-    User->>App: Select toilet & navigate
-    User->>App: Scan QR code
-    App->>Payment: Process transaction (if paid)
-    User->>App: Submit feedback
-    App->>Backend: Store rating/complaint
-    Backend->>SMS: Send acknowledgement
+![UserFlow](docs/assets/userflow.png)
+
 
 ```
 1. Open DigiSulabh → GPS locates nearby toilets
