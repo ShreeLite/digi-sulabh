@@ -34,10 +34,9 @@ flowchart TD
     G --> H[Photo Upload\nMulter + Cloudinary]
     H --> I[AI Model\nCleanliness Analysis]
     ```
-
 ---
 
-##🚀 Quickstart (For Devs)
+## 🚀 Quickstart (For Devs)
 # 1. Clone the repo
 git clone https://github.com/yourusername/digi-sulabh.git && cd digi-sulabh
 
