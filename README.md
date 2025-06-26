@@ -1,13 +1,9 @@
 # 🚽 DigiSulabh – Revolutionising Public Sanitation
 
-> A smart, scalable, full-stack public sanitation solution designed to **digitise and automate Sulabh Shauchalayas** across India, empowering citizens, improving hygiene, and bringing accountability to public infrastructure.
-
-![DigiSulabh Banner](docs/assets/banner.png) <!-- Replace with your banner -->
-
-# 🚽 DigiSulabh
 ### Smart Public Sanitation Platform for Modern India
 
  **DigiSulabh** is a smart, scalable, full-stack public sanitation solution designed to **digitise and automate Sulabh Shauchalayas** across India, empowering citizens, improving hygiene, and bringing accountability to public infrastructure through digital innovation, real-time monitoring, and AI-powered cleanliness verification.
+![DigiSulabh Banner](docs/assets/banner.png) <!-- Replace with your banner -->
 
 
 ---
