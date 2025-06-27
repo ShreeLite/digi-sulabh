@@ -87,7 +87,7 @@ A complete digital infrastructure that connects users, cleaners, and administrat
 ```
 
 ### For Cleaners:
-
+![Cleaner](docs/assets/cleanerflow.png)
 flowchart TD
     A[Cleaner Login] --> B[Dashboard]
     B --> C{View Toilets}
@@ -119,15 +119,8 @@ flowchart TD
 ---
 
 ## 🏗️ System Architecture
+![System Architecture](docs/assets/architecture.png)
 
-graph TD
-    A[React Frontend] --> B[Express API]
-    B --> C[MongoDB Atlas]
-    B --> D[Cloudinary]
-    B --> E[Stripe Payments]
-    B --> F[Python AI Model]
-    C --> G[n8n Automation]
-    G --> H[Twilio SMS/Email]
 
 DigiSulabh follows a **microservices-inspired architecture** with clear separation of concerns:
 
@@ -146,12 +139,12 @@ DigiSulabh follows a **microservices-inspired architecture** with clear separati
 | Component                | Status           | Details                                    |
 |--------------------------|------------------|--------------------------------------------|
 | 🏠 Landing Page          | ✅ Complete      | Responsive design with feature overview    |
-| 📱 Toilet Finder         | 🔄 In Progress   | GPS integration and mapping functionality  |
+| 📱 Toilet Finder         |  ✅ Complete   | GPS integration and mapping functionality  |
 | 📝 Feedback System       | ✅ Complete      | Rating and complaint submission            |
-| 🧑‍🔧 Cleaner Dashboard    | 🔄 In Progress   | Photo uploads working, OAuth pending       |
-| 💳 Stripe Integration    | ✅ Complete      | QR-based payment processing                |
-| 🤖 AI Cleanliness Model  | ✅ Complete      | Image classification with 85%+ accuracy   |
-| 📧 Notification System   | ✅ Complete      | SMS/email via Twilio integration          |
+| 🧑‍🔧 Cleaner Dashboard    |   ✅ Complete   | Photo uploads working, OAuth pending       |
+| 💳 Stripe Integration    | 🔄 In Progress     | QR-based payment processing                |
+| 🤖 AI Cleanliness Model  | 🔄 In Progress     | Image classification with 85%+ accuracy   |
+| 📧 Notification System   | 🔄 In Progress     | SMS/email via Twilio integration          |
 | 🔄 ETL Pipeline          | 🔄 In Progress      | Government website data scraping          |
 
 ---
@@ -325,7 +318,7 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md) for detailed guidelines.
 
 ## 👥 Development Team
 
-Built by ShreeLite a first-year engineering student at **IIIT Hyderabad**, combining social impact with technical excellence. This project showcases full-stack development skills, AI integration, and systems thinking applied to civic technology.
+Built by Shreem Shukla(@ShreeLite),a first-year Computer Science Engineering student at **IIIT Hyderabad**, combining social impact with technical excellence. This project showcases full-stack development skills, AI integration, and systems thinking applied to civic technology.
 
 ---
 
@@ -345,17 +338,13 @@ Built by ShreeLite a first-year engineering student at **IIIT Hyderabad**, combi
 
 ## 🐛 Issues & Support
 
-- **Bug Reports**: [Open an issue](https://github.com/yourusername/digi-sulabh/issues)
-- **Feature Requests**: [Request a feature](https://github.com/yourusername/digi-sulabh/issues)
-- **Questions**: [Start a discussion](https://github.com/yourusername/digi-sulabh/discussions)
+- **Bug Reports**: [Open an issue](https://github.com/ShreeLite/digi-sulabh/issues)
+- **Feature Requests**: [Request a feature](https://github.com/ShreeLite/digi-sulabh/issues)
+- **Questions**: [Start a discussion](https://github.com/ShreeLite/digi-sulabh/discussions)
 
 ---
 
-## 📜 License
 
-This project is licensed under the [MIT License](LICENSE) - see the LICENSE file for details.
-
----
 
 ## 🙏 Acknowledgments
 
@@ -370,9 +359,9 @@ This project is licensed under the [MIT License](LICENSE) - see the LICENSE file
 
 For questions, suggestions, or collaboration opportunities:
 
-- **Email**: [your.email@example.com](mailto:your.email@example.com)
-- **LinkedIn**: [Your LinkedIn](https://linkedin.com/in/yourprofile)
-- **Twitter**: [@yourusername](https://twitter.com/yourusername)
+- **Email**: [shreemcream@gmail.com](mailto:your.email@example.com)
+- **LinkedIn**: [Shreem Shukla](https://www.linkedin.com/in/shreem-shukla-816982337/)
+
 
 ---
 ## 🌍 Social Impact
