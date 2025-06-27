@@ -88,17 +88,8 @@ A complete digital infrastructure that connects users, cleaners, and administrat
 
 ### For Cleaners:
 ![Cleaner](docs/assets/cleanerflow.png)
-flowchart TD
-    A[Cleaner Login] --> B[Dashboard]
-    B --> C{View Toilets}
-    C --> D[Upload Photos]
-    D --> E[AI Analysis]
-    E --> F{Clean?}
-    F -->|Yes| G[Mark Complete]
-    F -->|No| H[Flag Issue]
-    H --> I[Address Complaints]
 
-```
+```mermaid
 1. OAuth login to cleaner dashboard
 2. View assigned toilets and pending complaints
 3. Upload daily cleanliness photos
