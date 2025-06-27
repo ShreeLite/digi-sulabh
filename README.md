@@ -8,10 +8,10 @@
 
 ---
 ## 🖼️ Screenshots
-
-| Home Page     | Feedback      | Dashboard     |
+Coming Soon!
+<!-- | Home Page     | Feedback      | Dashboard     |
 | ------------- | ------------- | ------------- |
-| *(Add image)* | *(Add image)* | *(Add image)* |
+| *(Add image)* | *(Add image)* | *(Add image)* | -->
 
 ---
 
@@ -68,6 +68,8 @@ A complete digital infrastructure that connects users, cleaners, and administrat
 | Payments   | Stripe (for paid toilets via QR)                                      |
 | AI         | Python-based cleanliness classifier for uploaded images               |
 | ETL        | Scraping Sulabh Shauchalaya government site to auto-populate database |
+
+![TechStack](docs/assets/techstack.png)
 
 ---
 
