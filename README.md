@@ -242,21 +242,15 @@ npm test
 
 ### User Routes
 - `GET /api/toilets/nearby` - Find nearby toilets based on GPS location
-- `POST /api/payment/process` - Process payments via Stripe
-- `GET /api/toilets/:id/status` - Get real-time toilet status
-- `POST /api/feedback` - Submit feedback and complaints
-- `GET /api/toilets/:id/qr` - Generate QR code for toilet access
+- `GET /api/complaint` - Fetch Complaints
+- `GET /api/feedback` - Fetch Feedback
+- `GET /api/feedback/average/:id` - Fetch Average Feedback For A Toilet via Toilet Id
+- `POST /api/feedback` - Submit feedback 
+- `POST /api/complaint` - Submit Complaint
+- `DELETE /api/complaint/:id` - Delete A Complaint
+- `PUT /api/complaint/:id` - Update Complaint Status
 
-### Cleaner Routes
-- `POST /api/cleaner/login` - OAuth login for cleaners
-- `POST /api/cleaner/upload` - Upload cleanliness photos
-- `GET /api/cleaner/assignments` - Get assigned toilet cleaning tasks
-- `PUT /api/cleaner/status/:toiletId` - Update cleaning status
 
-### Admin Routes
-- `GET /api/admin/analytics` - Get system analytics and reports
-- `POST /api/admin/toilets` - Add new toilet locations
-- `PUT /api/admin/toilets/:id` - Update toilet information
 
 ---
 
