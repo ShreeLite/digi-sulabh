@@ -89,7 +89,7 @@ A complete digital infrastructure that connects users, cleaners, and administrat
 ### For Cleaners:
 ![Cleaner](docs/assets/cleanerflow.png)
 
-```mermaid
+```
 1. OAuth login to cleaner dashboard
 2. View assigned toilets and pending complaints
 3. Upload daily cleanliness photos
